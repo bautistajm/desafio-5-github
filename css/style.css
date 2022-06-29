@@ -379,7 +379,7 @@ footer {
         flex-direction: column;
     }
 
-    .article-container{
+    .article-container {
         flex-direction: column;
         align-items: center;
     }
@@ -388,13 +388,26 @@ footer {
         flex-direction: column;
     }
 
-    .menu{
-        flex-direction: column;
+    .menu {
+        display: none;
     }
 
     footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .intro {
+        padding-top: 7rem;
+    }
+    
+    .aboutus-intro {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    .navbar {
+        display: none;
     }
 }
