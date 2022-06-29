@@ -322,10 +322,10 @@ footer {
 .aboutus-intro{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    background-color: silver;
     text-align: center;
     grid-area: aboutus-intro;
+    background-color: silver;
+    padding: 4rem;
 }
 
 .description{
@@ -347,6 +347,10 @@ footer {
     flex-direction: column;
     padding: 1rem;
     grid-area: chooseus;
+}
+
+.visually-hidden {
+    z-index: -1;
 }
 
 /*Responsive */
