@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: titulos1;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: parrafos;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+/* Estilos de títulos y párrafos */
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-family: titulos1;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: titulos2;
+    color: black;
+}
+
+h3 {
+    font-family: titulos2;
+}
+
+p {
+    font-family: parrafos;
+}
+
+a {
+    font-family: parrafos;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+ul li {
+    font-family: parrafos;
+    list-style: none;
+    padding: 0;
+}

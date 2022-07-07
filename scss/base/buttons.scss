@@ -1,0 +1,15 @@
+/* Buttons */
+
+button:hover {
+    transition: all .3s;
+    background-color: rgb(26, 61, 126);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(26, 61, 126);
+    color: white;
+    border-color: transparent;
+}

@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: titulos1;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: parrafos;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+/* Estilos de títulos y párrafos */
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-family: titulos1;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: titulos2;
+    color: black;
+}
+
+h3 {
+    font-family: titulos2;
+}
+
+p {
+    font-family: parrafos;
+}
+
+a {
+    font-family: parrafos;
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+ul li {
+    font-family: parrafos;
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    font-size: 18px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    grid-area: header;
+    z-index: 1;
+}
+
+.menu-items{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu-items:hover{
+    transition: all .5s;
+    background-color: rgb(9, 66, 151);
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: parrafos;
+    padding: 10px;
+}
+
+/* Buttons */
+button:hover{
+    transition: all .3s;
+    background-color: rgb(26, 61, 126);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(26, 61, 126);
+    color: white;
+    border-color: transparent;
+}
+
+/* Home page */
+
+/* Sector intro */
+
+.intro {
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 50px;
+    grid-area: intro;
+}
+
+.learnmore {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    font-family: parrafos;
+}
+
+/* Sector servicios */
+
+.our-services {
+    grid-area: our-services;
+}
+
+.our-solutions-title {
+    text-align: center;
+    grid-area: our-solutions-title;
+}
+
+.service {
+    width: 60%;
+}
+
+.service1{
+    grid-area: service1;
+}
+
+.service2{
+    grid-area: service2;
+}
+
+.service3{
+    grid-area: service3;
+}
+
+.service-description {
+    width: 60%;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-viewall {
+    display: flex;
+    justify-content: center;
+    grid-area: button-viewall;
+}
+
+.view-all {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    font-family: parrafos;
+}
+
+/* Sector blog */
+
+.latest-article{
+    grid-area: latest-article;
+}
+
+.latest-article-title {
+    text-align: center;
+    background-color: azure;
+}
+
+.article-pic {
+    width: 60%;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    padding: 20px;
+}
+
+.article-subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.article-subcontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.other-articles {
+    background-color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    grid-area: other-articles;
+}
+
+.otherarticle-pic {
+    width: 20%;
+    padding: 5px;
+}
+
+.other-article1 {
+    display: flex;
+    align-items: center;
+}
+
+.other-article2 {
+    display: flex;
+    align-items: center;
+}
+
+.other-article3 {
+    display: flex;
+    align-items: center;
+}
+
+.blog-container {
+    display: flex;
+    grid-area: blog-container;
+}
+
+.button-blog {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    font-family: parrafos;
+}
+
+/* Call to action */
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: cornflowerblue;
+    grid-area: call-to-action;
+}
+
+.button-contactus {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.contactus-button {
+    padding: 5px;
+    background-color: white;
+    font-family: parrafos;
+    border-radius: 2px;
+}
+
+.start-title {
+    text-align: center;
+}
+
+/* Footer */
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 33%;
+}
+
+.navigation {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+footer {
+    display: flex;
+    background-color: lightgrey;
+    grid-area: footer;
+}
+
+.footer-items:hover{
+    transition: all;
+    color: midnightblue;
+}
+
+/* About Us */
+
+.aboutus-intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: aboutus-intro;
+    background-image: url(../images/about1.jpg);
+    padding: 10rem;
+}
+
+.aboutus-intro p {
+    color: white;
+}
+
+.description-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2vw 30vh;
+    text-align: center;
+    grid-area: description;
+}
+
+.ourvalues{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    grid-area: ourvalues;
+    background-color: aliceblue;
+}
+
+.ourvalues h2 {
+    text-align: center;
+}
+
+.ourvalues-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 30vh;
+}
+
+.ourvalues-image {
+    width: 35%;
+    padding-right: 3rem;
+    min-width: 325px;
+}
+
+.chooseus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    grid-area: chooseus;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.chooseus h2 {
+    text-align: center;
+}
+
+.chooseus-image {
+    width: 35%;
+    padding-right: 3rem;
+    min-width: 325px;
+}
+
+.chooseus-content {
+    display: flex;
+    padding: 3rem 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visually-hidden {
+    z-index: -1;
+}
+
+/*Responsive */
+
+#body-index{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "intro"
+    "our-services"
+    "blog-container"
+    "call-to-action"
+    "footer";
+}
+
+#body-aboutus{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aboutus-intro"
+    "description"
+    "ourvalues"
+    "chooseus"
+    "call-to-action"
+    "footer";
+}
+
+@media screen and (max-width:650px) {
+    .service-container {
+        flex-direction: column;
+    }
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro {
+        padding-top: 7rem;
+    }
+    
+    /* About us */
+
+    .aboutus-intro {
+        padding: 7rem 0;
+    }
+
+    .description-about {
+        margin: 0;
+    }
+
+    .ourvalues-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .chooseus-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Footer */
+    .company-info {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navigation {
+        width: 100%;
+    }
+    
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    /* About us */
+    .ourvalues-content {
+        flex-direction: column;
+    }
+
+    .chooseus-content {
+        flex-direction: column;
+    }
+
+    .ourvalues-image {
+        padding-right: 0;
+    }
+
+    .chooseus-image {
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    .navbar {
+        display: none;
+    }
+}

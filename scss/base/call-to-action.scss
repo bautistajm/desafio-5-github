@@ -1,0 +1,27 @@
+/* Call to action */
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: cornflowerblue;
+    grid-area: call-to-action;
+}
+
+.button-contactus {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.contactus-button {
+    padding: 5px;
+    background-color: white;
+    font-family: parrafos;
+    border-radius: 2px;
+}
+
+.start-title {
+    text-align: center;
+}

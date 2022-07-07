@@ -1,0 +1,115 @@
+/*Responsive */
+
+#body-index {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "intro"
+    "our-services"
+    "blog-container"
+    "call-to-action"
+    "footer";
+}
+
+#body-aboutus {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aboutus-intro"
+    "description"
+    "ourvalues"
+    "chooseus"
+    "call-to-action"
+    "footer";
+}
+
+@media screen and (max-width:650px) {
+    .service-container {
+        flex-direction: column;
+    }
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro {
+        padding-top: 7rem;
+    }
+    
+    /* About us */
+
+    .aboutus-intro {
+        padding: 7rem 0;
+    }
+
+    .description-about {
+        margin: 0;
+    }
+
+    .ourvalues-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .chooseus-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Footer */
+    .company-info {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navigation {
+        width: 100%;
+    }
+    
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    /* About us */
+    .ourvalues-content {
+        flex-direction: column;
+    }
+
+    .chooseus-content {
+        flex-direction: column;
+    }
+
+    .ourvalues-image {
+        padding-right: 0;
+    }
+
+    .chooseus-image {
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    .navbar {
+        display: none;
+    }
+}

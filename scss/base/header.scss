@@ -1,0 +1,29 @@
+/* Header */
+header {
+    font-size: 18px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    grid-area: header;
+    z-index: 1;
+}
+
+.menu-items {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu-items:hover {
+    transition: all .5s;
+    background-color: rgb(9, 66, 151);
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: parrafos;
+    padding: 10px;
+}
+

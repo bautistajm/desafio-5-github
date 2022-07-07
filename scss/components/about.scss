@@ -1,0 +1,81 @@
+/* About Us */
+
+.aboutus-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: aboutus-intro;
+    background-image: url(../images/about1.jpg);
+    padding: 10rem;
+}
+
+.aboutus-intro p {
+    color: white;
+}
+
+.description-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2vw 30vh;
+    text-align: center;
+    grid-area: description;
+}
+
+.ourvalues {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    grid-area: ourvalues;
+    background-color: aliceblue;
+}
+
+.ourvalues h2 {
+    text-align: center;
+}
+
+.ourvalues-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 30vh;
+}
+
+.ourvalues-image {
+    width: 35%;
+    padding-right: 3rem;
+    min-width: 325px;
+}
+
+.chooseus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    grid-area: chooseus;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.chooseus h2 {
+    text-align: center;
+}
+
+.chooseus-image {
+    width: 35%;
+    padding-right: 3rem;
+    min-width: 325px;
+}
+
+.chooseus-content {
+    display: flex;
+    padding: 3rem 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visually-hidden {
+    z-index: -1;
+}
