@@ -1,0 +1,4 @@
+@mixin alignment($display, $align-items) {
+    display: $display;
+    align-items: $align-items;
+}

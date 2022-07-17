@@ -1,0 +1,150 @@
+@import '../base/maps';
+@import '../base/extend';
+@import '../base/mixins';
+
+/* Home page */
+
+/* Sector intro */
+
+.intro {
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 50px;
+    grid-area: intro;
+
+    .learnmore {
+        padding: map-get($standard-button, standard-padding);
+        margin: map-get($standard-button, standard-margin);
+        border-radius: map-get($standard-button, standard-border-radius);
+        font-family: map-get($standard-button, standard-font-family);
+    }
+
+}
+
+/* Sector servicios */
+
+.our-services {
+    grid-area: our-services;
+
+    .our-solutions-title {
+        text-align: center;
+        grid-area: our-solutions-title;
+    }
+
+    .service-container {
+        @extend %flex;
+
+        .service {
+            width: 60%;
+        }
+        
+        .service1 {
+            grid-area: service1;
+        }
+        
+        .service2 {
+            grid-area: service2;
+        }
+        
+        .service3 {
+            grid-area: service3;
+        }
+        
+        .service-description {
+            width: 60%;
+            text-align: center;
+        }
+
+    }
+
+    .button-viewall {
+        @extend %flex;
+        grid-area: button-viewall;
+
+        .view-all {
+            padding: map-get($standard-button, standard-padding);
+            margin: map-get($standard-button, standard-margin);
+            border-radius: map-get($standard-button, standard-border-radius);
+            font-family: map-get($standard-button, standard-font-family);
+        }
+
+    }
+
+}
+
+/* Sector blog */
+
+.blog-container {
+    display: flex;
+    grid-area: blog-container;
+
+    .latest-article{
+        grid-area: latest-article;
+
+        .latest-article-title {
+            text-align: center;
+            background-color: azure;
+        }
+
+        .article-container {
+            @extend %flex;
+            background-color: azure;
+            padding: 20px;
+
+            .article-subcontainer {
+                @extend %flex;
+                width: 50%;
+
+                .article-pic {
+                    width: 60%;
+                }
+
+            }
+
+            .article-subcontainer2 {
+                @extend %flex;
+                flex-direction: column;
+                width: 40%;
+
+                .button-blog {
+                    padding: map-get($standard-button, standard-padding);
+                    margin: map-get($standard-button, standard-margin);
+                    border-radius: map-get($standard-button, standard-border-radius);
+                    font-family: map-get($standard-button, standard-font-family);
+                }
+            }
+
+        }
+
+    }
+
+    .other-articles {
+        background-color: azure;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        grid-area: other-articles;
+
+        .other-article1 {
+            @include alignment(flex, center);
+        }
+    
+        .other-article2 {
+            @include alignment(flex, center);
+        }
+    
+        .other-article3 {
+            @include alignment(flex, center);
+        }
+
+    }
+
+    .otherarticle-pic {
+        width: 20%;
+        padding: 5px;
+    }
+
+}
+

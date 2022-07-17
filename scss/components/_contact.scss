@@ -1,0 +1,23 @@
+.intro-contact {
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 50px;
+    grid-area: intro;
+}
+
+.form {
+    text-align: center;
+    padding: 2rem;
+
+    .submit {
+        padding: 5px;
+        margin: 5px;
+        background-color: white;
+        font-family: parrafos;
+        font-size: large;
+
+        &:hover {
+            background-color: midnightblue;
+        }
+    }
+}
