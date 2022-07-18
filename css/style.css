@@ -343,6 +343,47 @@ footer .contact-info {
   text-align: center;
 }
 
+.services-container {
+  display: grid;
+  justify-content: center;
+}
+.services-container .services-list1 {
+  display: flex;
+}
+.services-container .services-list1 li {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  text-align: center;
+  font-size: 24px;
+}
+.services-container .services-list2 {
+  display: flex;
+}
+.services-container .services-list2 li {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  text-align: center;
+  font-size: 24px;
+}
+.services-container .services-list3 {
+  display: flex;
+}
+.services-container .services-list3 li {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+.image-service {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
 /*Responsive */
 #body-index {
   display: grid;
@@ -354,7 +395,7 @@ footer .contact-info {
   grid-template-areas: "header" "aboutus-intro" "description" "ourvalues" "chooseus" "call-to-action" "footer";
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 652px) {
   /*header & footer*/
   header .menu {
     display: none;
@@ -407,6 +448,46 @@ footer .contact-info {
     align-items: center;
     padding: 0;
   }
+  /* Services */
+  .intro-services {
+    padding-top: 7rem;
+  }
+  .services-container .services-list1 {
+    flex-direction: column;
+    padding: 0;
+  }
+  .services-container .services-list1 li {
+    margin: 0;
+  }
+  .services-container .services-list2 {
+    flex-direction: column;
+    padding: 0;
+  }
+  .services-container .services-list2 li {
+    margin: 0;
+  }
+  .services-container .services-list3 {
+    flex-direction: column;
+    padding: 0;
+  }
+  .services-container .services-list3 li {
+    margin: 0;
+  }
+  .image-service {
+    width: 100%;
+    height: auto;
+  }
+  /* Blog */
+  .intro-blog {
+    padding-top: 7rem !important;
+  }
+  /* Contact */
+  .intro-contact {
+    padding-top: 7rem !important;
+  }
+  .form .message {
+    height: 6rem;
+  }
 }
 @media screen and (max-width: 1250px) {
   /* About us */
@@ -423,11 +504,40 @@ footer .contact-info {
     padding-right: 0;
   }
 }
-@media screen and (min-width: 651px) {
+@media screen and (max-width: 1617px) {
+  /* Services */
+  .image-service {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 867px) {
+  /* Services */
+  .image-service {
+    width: 100%;
+    height: auto;
+  }
+  .services-container .services-list1 li {
+    margin: 1rem;
+  }
+  .services-container .services-list2 li {
+    margin: 1rem;
+  }
+  .services-container .services-list3 li {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 650px) {
   .navbar {
     display: none;
   }
 }
+.our-services .service-container, .our-services .button-viewall, .blog-container .latest-article .article-container, .blog-container .latest-article .article-container .article-subcontainer, .blog-container .latest-article .article-container .article-subcontainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .our-services .service-container, .our-services .button-viewall, .blog-container .latest-article .article-container, .blog-container .latest-article .article-container .article-subcontainer, .blog-container .latest-article .article-container .article-subcontainer2 {
   display: flex;
   justify-content: center;
@@ -439,6 +549,46 @@ footer .contact-info {
   background-color: cornflowerblue;
   padding: 50px;
   grid-area: intro;
+}
+
+.article-blog h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.blogimage {
+  width: 40%;
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.other-articles h2 {
+  text-align: center;
+}
+.other-articles .list-articles {
+  display: flex;
+  padding-left: 0;
+}
+.other-articles .list-articles li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-articles .oa-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.oa-button {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+  font-family: parrafos;
+}
+
+.otherarticles {
+  width: 30%;
 }
 
 .intro-contact {

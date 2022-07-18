@@ -4,6 +4,49 @@
     text-align: center;
 }
 
-.services-list1 {
-    display: flex;
+.services-container {
+    display: grid;
+    justify-content: center;
+
+    .services-list1 {
+        display: flex;
+    
+        li {
+            display: flex;
+            flex-direction: column;
+            margin: 4rem;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    
+    .services-list2 {
+        display: flex;
+    
+        li {
+            display: flex;
+            flex-direction: column;
+            margin: 4rem;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    
+    .services-list3 {
+        display: flex;
+    
+        li {
+            display: flex;
+            flex-direction: column;
+            margin: 4rem;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}
+
+.image-service {
+    width: 400px;
+    height: 250px;
+    margin-bottom: 1rem;
 }

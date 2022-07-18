@@ -1,3 +1,7 @@
+@import '../base/maps';
+@import '../base/extend';
+@import '../base/mixins';
+
 .intro-blog {
     text-align: center;
     background-color: cornflowerblue;
@@ -5,3 +9,48 @@
     grid-area: intro;
 }
 
+.article-blog h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.blogimage {
+    width: 40%;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.other-articles {
+    h2 {
+        text-align: center;
+    }
+
+    .list-articles {
+        display: flex;
+        padding-left: 0;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .oa-button-container {
+        display: flex;
+        justify-content: center;
+    }    
+}
+
+.oa-button {
+    padding: map-get($standard-button, standard-padding);
+    margin: map-get($standard-button, standard-margin);
+    border-radius: map-get($standard-button, standard-border-radius);
+    font-family: map-get($standard-button, standard-font-family);
+}
+
+
+.otherarticles {
+    width: 30%;
+}
