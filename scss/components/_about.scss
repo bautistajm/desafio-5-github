@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    margin: 2vw 30vh;
+
     text-align: center;
     grid-area: description;
 }
@@ -26,6 +26,7 @@
 .ourvalues {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1rem;
     grid-area: ourvalues;
     background-color: aliceblue;
