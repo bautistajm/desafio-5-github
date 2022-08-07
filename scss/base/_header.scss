@@ -8,11 +8,33 @@ header {
     z-index: 1;
 
     .menu {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        justify-content: center;
         align-items: center;
         font-family: parrafos;
         padding: 10px;
+        grid-template-areas:
+        "logo-menu navbar-menu search-menu";
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+
+        .navbar-menu {
+            grid-area: navbar-menu;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .search-menu {
+            grid-area: search-menu;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-menu {
+            grid-area: logo-menu;
+            display: flex;
+            justify-content: center;
+        }
 
         .menu-items {
             border-radius: 5px;

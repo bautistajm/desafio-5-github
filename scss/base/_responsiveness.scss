@@ -23,7 +23,16 @@
     "footer";
 }
 
-@media screen and (max-width:652px) {
+@media screen and (max-width:1154px) {
+    header {
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:665px) {
 
     /*header & footer*/
     header .menu {
@@ -198,7 +207,7 @@
     }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 666px) {
     .navbar {
         display: none;
     }

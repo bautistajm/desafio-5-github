@@ -72,11 +72,29 @@ header {
   z-index: 1;
 }
 header .menu {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
   align-items: center;
   font-family: parrafos;
   padding: 10px;
+  grid-template-areas: "logo-menu navbar-menu search-menu";
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+}
+header .menu .navbar-menu {
+  grid-area: navbar-menu;
+  display: flex;
+  justify-content: space-around;
+}
+header .menu .search-menu {
+  grid-area: search-menu;
+  display: flex;
+  justify-content: center;
+}
+header .menu .logo-menu {
+  grid-area: logo-menu;
+  display: flex;
+  justify-content: center;
 }
 header .menu .menu-items {
   border-radius: 5px;
@@ -167,6 +185,7 @@ button:active {
 .blog-container .latest-article .latest-article-title {
   text-align: center;
   background-color: azure;
+  margin: 0;
 }
 .blog-container .latest-article .article-container {
   background-color: azure;
@@ -403,7 +422,13 @@ footer .contact-info {
   grid-template-areas: "header" "aboutus-intro" "description" "ourvalues" "chooseus" "call-to-action" "footer";
 }
 
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 1154px) {
+  header .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 665px) {
   /*header & footer*/
   header .menu {
     display: none;
@@ -536,7 +561,7 @@ footer .contact-info {
     margin: 1rem;
   }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 666px) {
   .navbar {
     display: none;
   }
@@ -562,7 +587,7 @@ footer .contact-info {
 
 .article-blog h2 {
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .blogimage {
