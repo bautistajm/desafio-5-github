@@ -297,7 +297,7 @@ footer .contact-info {
   flex-direction: column;
   text-align: center;
   grid-area: aboutus-intro;
-  background-image: url(../images/about1.jpg);
+  background-image: url(../images/about1.webp);
   padding: 10rem;
 }
 .aboutus-intro p {
